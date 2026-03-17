@@ -1,17 +1,16 @@
-
-body{background-image: url(image/gymn.png);
+body {
+  background-image: url("images/gymn.png");   /* dossier images à côté de index.html */
   perspective: 800px;
-  
-  background-size: cover;}  
-    
-  .logo {
-  width: 200px;
+  background-size: cover;
+}
+
+.logo {
+  width: 120px;
   transform-style: preserve-3d;
   animation: rotationLogo 8s infinite linear;
   position: absolute;
   top: 5px;   
   left: 20px;
-  width: 120px;
 }
 
 @keyframes rotationLogo {
@@ -19,235 +18,13 @@ body{background-image: url(image/gymn.png);
   to   { transform: rotateY(360deg); }
 }
 
-header {
+.slider-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100vh;
+  background-image: url("images/image1.png");  /* plus de chemin local Windows */
+  background-repeat: no-repeat; 
   background-size: cover;
 }
 
-
-
-ul {
-  list-style: none;
-  float: right;
-  display: flex;
-  margin: auto;
-}
-
-ul li a {
-  text-decoration: none; 
-  text-decoration-style: dotted; 
-color: white;
-  padding: 10px 20px; 
-  transition: 0.5s ease; 
-  text-transform: uppercase;
-  border: 3px solid white;
-  margin: 10px;
-  position: relative;
-  width: 200px;   
-  height: 30px;   
-  font-family: "Poppins", sans-serif; 
-  font-size: 28px;                    
-  font-weight: 200;                     
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-}
-
-ul li a:hover {
-  color: white;       
-  background: #fff;   
-}
-
-.titre {
-  display: inline-block;
-  font-size: 40px;
-  color: white;
-  animation: cercle3D 6s infinite linear;
-  transform-style: preserve-3d;
-  text-align: center;
-  font-family: Poppins;
-  font-weight: 300;
-}
-
-h1 {
-  perspective: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-  top: -200px;
-  position: relative;
-}
-
-.slider-container{
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-image: url("C:/Users/Fatoumata/Pictures/image1.png"); 
-  background-repeat: no-repeat; 
-  background-size: cover;}
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 10px;       
-  margin-bottom: 1px;
-}
-
-.gallery img {
-  width: 300px;    
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 2s ease;
-}
-.gallery img:active {
-  transform: scale(1000); 
-}
-
-.gallery{
-  top: -500px;
-}
-nav {
-  text-align: center;
-  margin-bottom: 1px;
-}
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #d6336c;
-  font-weight: bold;
-}
-nav a:hover {
-  color: #444;
-}
-
-  body {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      perspective: 1000px;}
-     
-      
-
-   h3{
-    font-size: 30px;
-    color: white;
-   }
-   ol{font: size 20px;;
-
-   }
-p{
-  font-size: 20px;
-color: white
-}
-h2{
-  font-size: 20px;
-  color: white;
-}
-div{
-  text-align: center;
-  font-size: 60px;
-  color: white;
-  margin-top: 150px;   
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  }
-h4{
-  font-size: 20px;
-}
-.texte{
-  background-color: grey;
-}
-.bloc img {
-  position: relative;
-  top: 100px; 
-}
-h5{
-  font-size:40px;
-}
-h6{
-  font-size: 30px;
-}
-ol{
-  font-size: 15px;
-
-}
-.a{
-  font-size: 40px;
-  text-align: center;
- height: 50px;
-}
-.z{
-  font-size: 40px;
-
-
-}
-.g{
-  font-size: 30px;
-  text-align: center;
-  width: 100%;
-  top: -100px;
-}
-
-.galerie-horizontale {
-  display: flex;              
-  overflow-x: auto;           
-  gap: 15px;                  
-  padding: 10px;
-  scroll-snap-type: x mandatory; }
-
-.galerie-horizontale figure {
-  flex: 0 0 auto;             
-  scroll-snap-align: center;  
-  text-align: center;
-}
-
-.galerie-horizontale img {
-  width: 220px;               
-  
-  height: 150px;
-  object-fit: cover;        
-  border-radius: 8px;         
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
-}
-
-.galerie-horizontale figcaption {
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.modal {
-  display: none; 
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-}
-
-.modal-content {
-  background: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  width: 60%;
-  border-radius: 8px;
-  text-align: left;
-}
-
-.close {
-  float: right;
-  font-size: 24px;
-  cursor: pointer;
-}
-.k{
-  font-size: 20px;
-  color: beige;
-}
-ol{color: blanchedalmond;
-  font-size: 20px;
-}
